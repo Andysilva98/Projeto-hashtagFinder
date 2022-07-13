@@ -1,0 +1,50 @@
+@import url(../../css/global.css);
+
+.botaoAzul button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 30px;
+  background-color: var(--cor-botao-azul);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.iconeAzul {
+  width: 26%;
+  padding-right: 14px;
+}
+
+/* Responsividade - Tela 720 pixels */
+@media screen and (min-width: 721px) {
+  .iconeAzul {
+    width: 22%;
+  }
+
+  .botaoAzul button {
+    width: 170px;
+    height: 49px;
+    font-size: 0.9em;
+  }
+}
+
+/* Responsividade - Tela 414 pixels */
+@media screen and (max-width: 414px) {
+  .botaoAzul button {
+    width: 80px;
+    height: 25px;
+    font-size: 0.6em;
+  }
+
+  .iconeAzul {
+    width: 26%;
+    padding-right: 8px;
+  }
+}

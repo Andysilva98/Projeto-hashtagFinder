@@ -1,0 +1,63 @@
+.bgImageGallery img {
+  box-shadow: 8px 14px 30px var(--color-box-shadow);
+  border-radius: 21px;
+  padding: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.bgPostUser {
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 21px;
+  background: var(--cor-fundo-galeria-link-usuário);
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.bgPostUser p {
+  padding-bottom: 6px;
+}
+
+.bgPostUser a {
+  text-decoration: none;
+}
+
+.bgImageGallery:hover .bgPostUser a {
+  color: var(--button-color);
+}
+
+@media screen and (max-width: 480px) {
+  .bgImageGallery img {
+    width: 160px;
+  }
+
+  .bgImageGallery p {
+    padding-top: 0;
+  }
+
+  .bgImageGallery span {
+    padding-top: 200px;
+    font-size: 13px;
+  }
+  .bgMain {
+    margin-top: 0;
+  }
+  .bgDisplaySearch {
+    margin: 54px 36px;
+  }
+  .bgMain h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .bgPostUser {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+  }
+}

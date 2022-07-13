@@ -1,0 +1,76 @@
+.fundo {
+  background: url(../../imagens/login/login-bg.jpg);
+  background-repeat: no-repeat ;
+  background-size: auto;
+  background-attachment: fixed;
+  width: 100%;
+  
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 150px;
+  margin-bottom: 49px;
+  text-align: center;
+}
+
+.listagem {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-fundo-tabela-lista);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.header {
+  padding: 20px 0;
+  background-color: var(--cor-fundo-titulo-tabela-lista);
+  border-radius: 20px 20px 0 0;
+}
+
+.header div {
+  color: var(--cor-titulo-tabela-lista);
+  font-weight: 500;
+}
+
+.linha {
+  padding: 10px 0;
+  border-top: 1px solid var(--cor-fundo-titulo-tabela-lista);
+}
+
+.linha div {
+  color: var(--cor-texto-tabela-lista);
+}
+
+.alinhamento {
+  display: flex;
+  justify-content: end;
+}
+
+.alinhamento div {
+  width: 100px;
+}
+
+.alinhamento div:first-child {
+  margin-right: auto;
+  padding-left: 40px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .alinhamento div:first-child {    
+    padding-left: 20px;  
+  }
+
+  .alinhamento div {
+    width: 80px;
+  }
+
+  .titulo {
+    
+    margin-top: 100px;
+    
+  }
+}

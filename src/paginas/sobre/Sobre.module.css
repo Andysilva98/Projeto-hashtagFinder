@@ -1,0 +1,270 @@
+.titulo {
+  padding-top: 185px;
+  padding-bottom: 50px;
+}
+
+.fundo {
+  background: url(../../../src/imagens/sobre/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 422px;
+}
+
+.tituloTexto {
+  font-size: 5.12em;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+.subtituloTexto {
+  font-size: 2.7em;
+  font-weight: bold;
+  padding-bottom: 25px;
+  color: var(--cor-titulo-pagina-sobre);
+}
+
+.artigo {
+  grid-gap: 50px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  margin: 193px auto 183px;
+  width: 85%;
+}
+
+.subtitulo {
+  max-width: 753px;
+}
+
+.blocoParagrafoTexto {
+  color: var(--cor-texto-pagina-sobre);
+  font-size: 1.56em;
+  line-height: 1.7em;
+}
+
+.quemSomos {
+  margin-top: 183px;
+}
+
+.subtitulo2Texto {
+  color: blue;
+  font-size: 2.75em;
+  font-weight: bold;
+  margin-bottom: 66px;
+  margin-left: 136px;
+}
+
+.blocoImagem {
+  max-width: 637px;
+}
+
+.blocoImagem img {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* Quem Somos - CARD Membros */
+.containerGeral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 180px;
+  gap: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 20.8%;
+}
+
+.containerMembros {
+  display: flex;
+  justify-content: space-between;
+  min-height: 630px;
+  border: 1px solid var(--cor-borda-cartao-membro);
+  box-shadow: 0px 5px 10px var(--cor-sombra-cartao-membro);
+  border-radius: 10px;
+}
+
+.containerCartaoMembros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.membroFoto {
+  width: 203px;
+  height: 203px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.informacaoMembros {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+
+.informacaoMembrosTitulo {
+  color: var(--cor-nome-cartao-membro);
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.informacaoMembrosTexto {
+  color: var(--cor-texto-pagina-sobre);
+  font-size: 1.18em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.containerIcones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.containerIcones img {
+  padding: 0px 9px;
+  cursor: pointer;
+}
+
+/* Responsividade - Tela de 1200 pixels */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 33.4%;
+  }
+
+  .containerGeral {
+    gap: 50px 100px;
+  }
+}
+
+/* Responsividade - Tela de 1112 pixels */
+@media screen and (max-width: 1112px) {
+  .artigo {
+    grid-template-columns: 1fr;
+    margin-top: 120px;
+  }
+
+  .blocoParagrafoTexto {
+    font-size: 1.36em;
+  }
+}
+
+/* Responsividade - Tela de 720 pixels */
+@media screen and (max-width: 720px) {
+  .fundo {
+    height: 352px;
+  }
+
+  .titulo {
+    /* margin-top: 100px; */
+    margin-bottom: 45px;
+  }
+
+  .tituloTexto {
+    font-size: 3em;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .subtitulo2Texto {
+    margin-left: 54px;
+  }
+}
+
+/* Responsividade - Tela entre 350 a 650 pixels */
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .fundo {
+    height: 206px;
+    background: url(../../imagens/sobre/about-bg.jpg);
+    background-size: 414px 206px;
+    background-repeat: no-repeat;
+  }
+
+  .titulo {
+    padding-top: 114px;
+  }
+
+  .tituloTexto {
+    font-size: 2.3em;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .artigo {
+    flex-direction: column;
+    margin: 55px auto auto;
+  }
+
+  .blocoParagrafoTexto {
+    font-size: 0.97em;
+  }
+
+  .subtituloTexto {
+    font-size: 1.5em;
+  }
+
+  .subtitulo2Texto {
+    color: blue;
+    font-size: 1.5em;
+    margin-bottom: 46px;
+    margin-left: 36px;
+  }
+
+  .quemSomos {
+    margin-top: 112px;
+  }
+
+  .containerGeral {
+    gap: 20px 199px;
+    margin-bottom: 74px;
+  }
+
+  .container {
+    width: 87%;
+  }
+
+  .containerCartaoMembros {
+    padding: 36px;
+  }
+
+  .containerMembros {
+    min-height: 471px;
+  }
+
+  .membroFoto {
+    width: 182px;
+    height: 182px;
+  }
+
+  .informacaoMembrosTitulo {
+    font-size: 1.75em;
+    margin: 22px 0px;
+  }
+
+  .informacaoMembrosTexto {
+    font-size: 1.18em;
+  }
+
+  .containerIcones img {
+    padding: 0px 15px;
+  }
+}

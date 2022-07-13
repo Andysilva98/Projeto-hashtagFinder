@@ -1,0 +1,37 @@
+.containerRodape {
+  width: 100%;
+  height: 202px;
+  background: var(--cor-fundo-rodape);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.56em;
+  position: relative;
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 906px) and (max-width: 1400px) {
+  .containerRodape {
+    height: 124px;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 905px) {
+  .containerRodape {
+    height: 90px;
+    font-size: 1em;
+  }
+}
+
+/* Responsividade - Tela 414 pixels */
+@media (max-width: 414px) {
+  .containerRodape {
+    height: 68px;
+    font-size: 0.62em;
+    margin-top: 56px;
+  }
+}

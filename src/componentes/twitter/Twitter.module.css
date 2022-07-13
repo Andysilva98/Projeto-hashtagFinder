@@ -1,0 +1,176 @@
+.containerTwitterCartao {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  flex-wrap: wrap;
+  margin: 125px 187px 90pc 187px;
+  gap: 77px;
+  margin-top: 125px;
+}
+
+.containerTwitter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.twitter {
+  display: flex;
+  border: 1px solid var(--cor-borda-twitter);
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px var(--cor-sombra-twitter);
+  padding: 1.5625rem;
+  gap: 0.9375rem;
+  width: 735px;
+}
+
+.containerTwitterFoto {
+  display: flex;
+}
+
+.twitterFoto {
+  width: 82px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.twitterNome,
+.twitterDescricao,
+.twitterLink {
+  color: #000;
+}
+
+.containerTwitterNomeUsuario {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.twitterNome {
+  font-size: 1.68em;
+  font-weight: 500;
+  padding-right: 17px;
+}
+
+.twitterUsuario {
+  opacity: 60%;
+  color: var(--cor-usuario-twitter);
+  text-decoration: none;
+}
+
+.containerTwitterDescricao {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0.3125rem;
+}
+
+.twitterDescricao {
+  font-size: 1.18em;
+  line-height: 1.2em;
+  padding: 20px 0 20px 0;
+}
+
+.twitterLink {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: var(--cor-twitter-link);
+  text-decoration: none;
+}
+
+/* Responsividade - Tela 1920 pixels */
+@media screen and (min-width: 1920px) {
+  .twitter {
+    width: 100%;
+  }
+}
+
+/* Responsividade - Tela entre 1000 a 1582 pixels */
+@media screen and (min-width: 1000px) and (max-width: 1582px) {
+  .containerTwitter {
+    width: 100%;
+  }
+}
+
+/* Responsividade - Tela 699 pixels */
+@media screen and (max-width: 699px) {
+  .twitterNome {
+    font-size: 0.75em;
+  }
+
+  .twitterUsuario {
+    font-size: 0.5em;
+  }
+
+  .twitterFoto {
+    width: 54px;
+    height: 54px;
+  }
+
+  .twitterDescricao {
+    font-size: 0.75em;
+  }
+
+  .twitterLink {
+    font-size: 0.56em;
+  }
+}
+
+/* Responsividade - Tela 600 pixels */
+@media screen and (max-width: 600px) {
+  .containerTwitterCartao {
+    display: flex;
+  }
+}
+
+/* Responsividade - Tela entre 480 a 999 pixels */
+@media screen and (min-width: 480px) and (max-width: 999px) {
+  .containerTwitter {
+    width: 100%;
+  }
+
+  .twitter {
+    flex-direction: column;
+  }
+}
+
+/* Responsividade - Tela entre 415 a 732 pixels */
+@media screen and (min-width: 350px) and (max-width: 479px) {
+  .twitter {
+    padding: 0px;
+    gap: 0px;
+  }
+}
+
+/* Responsividade - Tela entre 350 a 490 pixels */
+@media screen and (min-width: 350px) and (max-width: 490px) {
+  .containerTwitterFoto,
+  .containerTwitterDescricao {
+    padding: 15px 14px;
+  }
+
+  .twitterFoto {
+    width: 54px;
+    height: 54px;
+  }
+
+  .twitterNome,
+  .twitterDescricao {
+    font-size: 0.75em;
+  }
+
+  .twitterUsuario {
+    font-size: 0.5em;
+  }
+
+  .twitterDescricao {
+    padding: 10px 0px;
+  }
+
+  .twitterLink {
+    font-size: 0.56em;
+  }
+}

@@ -1,0 +1,17 @@
+/* Versão Desktop */
+
+.fundoLogin {
+  background: url(../../imagens/login/login-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Versão Mobile */
+
+@media screen and (min-width: 415px) {
+  .cabecalhoTitulo {
+    font-size: 35px;
+  }
+}

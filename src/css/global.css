@@ -1,0 +1,81 @@
+@import url(../css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  color: var(--cor-padrao-texto);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  flex: 1;
+}
+
+:root {
+  /* Cores Globais */
+  --cor-padrao-texto: #fff;
+  --cor-botao-rosa: #d842bd;
+  --cor-botao-azul: #3633f7;
+  --cor-texto-busca: #8d9da2;
+
+  /* CABEÇALHO Ativado */
+  --cor-fundo-cabecalho: rgba(255, 255, 255, 0.788);
+  --cor-texto-logo: #d842bd;
+
+  /* Página HOME - GALERIA */
+  --cor-fundo-botao-galeria: #fff;
+  --cor-texto-descricao-galeria: #3634f7;
+  --cor-sombra-galeria: #5538ee29;
+
+  /* Página HOME - GALERIA (Links Usuários) */
+  --cor-fundo-galeria-link-usuário: rgba(0, 0, 0, 0.616);
+
+  /* Página HOME - GALERIA (Modal - Janela) */
+  --cor-fundo-galeria-modal: rgba(0, 0, 0, 0.616);
+  --cor-fundo-galeria-modal-botao-x: rgba(0, 0, 0, 0.616);
+
+  /* Página HOME - GALERIA (Setas Scroll) */
+  --cor-fundo-galeria-setas: #FFF;
+
+  /* Página HOME - BUSCA (Texto Erro) */
+  --cor-sombra-texto-erro: 1px 1px 10px #fff, 1px 1px 2px #fff;
+
+  /* Página HOME - Cartões TWITTER */
+  --cor-borda-twitter: #5538ee24;
+  --cor-sombra-twitter: #5538ee14;
+  --cor-usuario-twitter: #292929;
+  --cor-twitter-link: #3634f7;
+
+  /* Página HOME - RODAPÉ */
+  --cor-fundo-rodape: #d842bd;
+
+  /* Página Sobre */
+  --cor-titulo-pagina-sobre: #3634f7;
+  --cor-texto-pagina-sobre: #292929;
+  --cor-borda-cartao-membro: #5538ee24;
+  --cor-sombra-cartao-membro: #5538ee14;
+  --cor-nome-cartao-membro: #292929;
+
+  /* Página LOGIN */
+  --cor-texto-formulario-titulo: #3634f7;
+  --cor-texto-formulario: #292929;
+  --cor-botao-formulario: #3633f7;
+
+  /* Página LISTA */
+  --cor-titulo-tabela-lista: #3633f7;
+  --cor-fundo-tabela-lista: #fff;
+  --cor-fundo-titulo-tabela-lista: #f1f1f1;
+  --cor-texto-tabela-lista: #d842bd;
+}

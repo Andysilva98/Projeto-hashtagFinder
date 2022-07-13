@@ -1,0 +1,97 @@
+nav.container {
+  display: flex;
+}
+
+.containerDescricao {
+  width: 804px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 140px;
+  margin-top: 253px;
+}
+
+.descricaoTitulo,
+.descricaoSubtitulo {
+  line-height: 1.1em;
+}
+
+.descricaoTitulo {
+  font-size: 5.1em;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.descricaoSubtitulo {
+  font-size: 1.9em;
+  padding-top: 28px;
+  width: 76%;
+}
+
+/* Responsividade - Tela 1000 pixels */
+@media screen and (max-width: 1000px) {
+  nav.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerDescricao {
+    width: 80%;
+    margin-left: 0px;
+  }
+
+  .descricaoTitulo {
+    font-size: 5em;
+  }
+}
+
+/* Responsividade - Tela entre 733 a 914 pixels */
+@media screen and (min-width: 733px) and (max-width: 914px) {
+  .containerDescricao {
+    margin-top: 108px;
+  }
+
+  .descricaoTitulo {
+    font-size: 4em;
+  }
+
+  .descricaoSubtitulo {
+    font-size: 1.5em;
+  }
+}
+
+/* Responsividade - Tela entre 415 a 732 pixels */
+@media screen and (min-width: 415px) and (max-width: 732px) {
+  .containerDescricao {
+    margin-top: 140px;
+  }
+
+  .descricaoTitulo {
+    font-size: 3em;
+    margin: 0px;
+  }
+
+  .descricaoSubtitulo {
+    font-size: 1.3em;
+  }
+}
+
+/* Responsividade - Tela 414 pixels */
+@media screen and (max-width: 414px) {
+  .containerDescricao {
+    height: 135px;
+    margin-top: 135px;
+  }
+
+  .descricaoTitulo {
+    font-size: 2.25em;
+  }
+
+  .descricaoSubtitulo {
+    font-size: 1em;
+    width: 95%;
+    line-height: 1.5em;
+  }
+}

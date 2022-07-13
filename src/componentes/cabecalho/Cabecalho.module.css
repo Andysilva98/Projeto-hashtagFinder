@@ -1,0 +1,154 @@
+.container {
+  width: 100%;
+}
+
+/* Cabeçalho Ativo ao rolar o Scroll da página */
+.ativaCabecalho {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  top: 0;
+  -webkit-animation: text-focus-in 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: text-focus-in 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ativaCabecalho .containerCabecalho {
+  padding: 16px 64px;
+  justify-content: center;
+  background-color: var(--cor-fundo-cabecalho);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  top: 0;
+}
+
+.ativaCabecalho span {
+  color: var(--cor-texto-logo);
+}
+
+/* Animação text-focus-in do CABECALHO */
+/* https://animista.net/play/text/focus-in/text-focus-in */
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/*----------------------------------------------*/
+
+.containerCabecalho {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 40px 64px 0px 64px;
+  width: 100%;
+}
+
+.containerCabecalhoBotoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cabecalhoTitulo {
+  font-size: 2.2em;
+}
+
+.tituloNegrito {
+  font-weight: bold;
+}
+
+.botaoSobre,
+.botaoLogin {
+  width: 170px;
+  height: 49px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+}
+
+.botaoSobre {
+  background: var(--cor-botao-sobre);
+  margin-right: 35px;
+}
+
+.botaoLogin {
+  background: var(--cor-botao-login);
+}
+
+.iconeBotao {
+  padding-right: 14px;
+}
+
+/* Responsividade - Tela entre 415 a 720 pixels */
+@media screen and (min-width: 415px) and (max-width: 720px) {
+  .containerCabecalho {
+    padding: 36px 16px 0px 16px;
+  }
+
+  .cabecalhoTitulo {
+    font-size: 1.2em;
+  }
+
+  .ativaCabecalho .containerCabecalho {
+    padding: 16px 16px;
+  }
+}
+
+/* Responsividade - Tela 414 pixels */
+@media screen and (max-width: 414px) {
+  .ativaCabecalho .containerCabecalho {
+    top: 0px;
+    padding: 12px 20px;
+  }
+
+  .containerCabecalho {
+    padding: 37px 16px 0px 16px;
+  }
+
+  .cabecalhoTitulo {
+    font-size: 1.18em;
+  }
+
+  .botaoSobre,
+  .botaoLogin {
+    width: 106px;
+    height: 30px;
+    font-size: 0.6em;
+  }
+
+  .botaoSobre {
+    margin-right: 13px;
+  }
+
+  .iconeBotao {
+    width: 24%;
+  }
+}

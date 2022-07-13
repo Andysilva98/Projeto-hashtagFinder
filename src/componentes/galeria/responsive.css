@@ -1,0 +1,18 @@
+@media screen and (max-width: 480px) {
+  .swiper-backface-hidden .swiper-slide img{
+    width: 159px;
+    height: 250px;
+    margin-left: auto;
+  }
+  .swiper-button-prev,
+  .swiper-button-disabled{
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .swiper-backface-hidden .swiper-slide img{
+    width: 100px;
+    height: 250px;
+  }
+}

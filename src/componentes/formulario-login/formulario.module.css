@@ -1,0 +1,110 @@
+.containerFormulario {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 194px;
+  padding-bottom: 236px;
+}
+
+.formulario {
+  width: 553px;
+  height: 608px;
+  padding: 62px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.formularioTitulo {
+  font-size: 2.12em;
+  color: var(--cor-texto-formulario-titulo);
+  text-align: center;
+  font-weight: bold;
+}
+
+.formularioUsuario,
+.formularioSenha {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  color: var(--cor-texto-formulario);
+  font-size: 1.06em;
+  font-weight: 600;
+  background: transparent;
+  border-bottom: 1px solid #e9e9f0;
+}
+
+.formularioUsuario input,
+.formularioSenha input {
+  padding-top: 10px;
+  border: 0px;
+  outline: 0px;
+  color: var(--cor-texto-formulario);
+  font-size: 14px;
+}
+
+.formularioUsuario label,
+.formularioSenha label {
+  color: var(--cor-texto-formulario);
+}
+
+.formularioBotaoDiv {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.formularioBotaoAcessar {
+  width: 213px;
+  height: 58px;
+  text-transform: uppercase;
+  background-color: var(--cor-botao-formulario);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 34px;
+  border: none;
+  cursor: pointer;
+}
+
+.mensagemErro {
+  color: red;
+  padding-top: 5px;
+}
+
+.mensagemDeErro {
+  color: red;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 721px) {
+  .containerFormulario {
+    padding-bottom: 218px;
+  }
+
+  .formulario {
+    width: 420px;
+    height: 560px;
+  }
+
+  .formularioTitulo {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 500px) {
+  .containerFormulario {
+    padding-bottom: 218px;
+  }
+
+  .formulario {
+    width: 340px;
+    height: 460px;
+  }
+
+  .formularioTitulo {
+    padding: 0px;
+    margin: 0px;
+  }
+}

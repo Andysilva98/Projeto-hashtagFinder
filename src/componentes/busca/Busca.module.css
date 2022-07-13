@@ -1,0 +1,331 @@
+section.container {
+  margin-top: 189px;
+}
+
+/* Desabilitar Container */
+.containerOculto {
+  display: none;
+}
+
+.containerCampoBusca {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.campoBusca {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-shadow: 8px 14px 30px #5538ee29;
+}
+
+.campoBusca,
+.campoBuscaInput {
+  width: 56.4%;
+  height: 119px;
+  background: #fff;
+  border-radius: 75px;
+  border: none;
+}
+
+.campoBuscaInput {
+  width: 85%;
+  height: 100%;
+  color: #000;
+  outline: none;
+  font-size: 3.12em;
+  padding-left: 44px;
+}
+
+.campoBuscaInput::placeholder {
+  font-weight: normal;
+  color: var(--cor-texto-busca);
+  border: none;
+}
+
+.campoBuscaIcone {
+  padding-left: 60px;
+}
+
+/* Texto Resultados Mais Recentes */
+.containerTextoResultado {
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.containerTextoResultadoDesabilitada {
+  display: none;
+}
+
+.TextoResultado {
+  margin: 114px 0px;
+  padding: 0px 30px;
+  text-align: center;
+  color: var(--cor-texto-descricao-galeria);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.containerTwitterCartao {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  flex-wrap: wrap;
+  margin: auto 187px;
+  gap: 77px;
+  margin-top: 125px;
+}
+
+.textoErro {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  color: blue;
+  font-size: 1.5em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+/* MODAL */
+.modalContainer {
+  background-color: #fff;
+  width: 65vw;
+  height: 85vh;
+  margin: 3.5vw auto 0 auto;
+  box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.78);
+  border-radius: 1.25rem;
+  position: absolute;
+  display: flex;
+  z-index: 3;
+}
+
+.modalContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.78);
+}
+
+.modalContainer button {
+  font-size: 15px;
+  cursor: pointer;
+  right: 0;
+  font-weight: Bold;
+  border: none;
+  background: none;
+  position: absolute;
+  background-color: var(--cor-fundo-galeria-modal-botao-x);
+  backdrop-filter: blur(5px);
+  margin: 10px;
+  padding: 6px 10px;
+  max-height: 55px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  backdrop-filter: blur(12px);
+}
+
+.modalDisabled {
+  display: none;
+}
+
+.modalData {
+  position: absolute;
+  bottom: 0;
+  padding: 0 10px;
+  opacity: 1;
+  background-color: var(--cor-fundo-galeria-modal);
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+  z-index: 2;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.modalData h4:hover {
+  color: var(--button-color-hover);
+}
+
+.modalData h4,
+span {
+  color: var(--button-color);
+  font-size: 16px;
+  font-family: var(--fontMain);
+}
+
+.modalData a {
+  line-height: 1.4em;
+  text-decoration: none;
+}
+
+/* Responsividade - Tela 1400 pixels */
+@media (min-width: 1501px) {
+  .containerTwitterCartao {
+    gap: 80px;
+  }
+}
+
+/* Responsividade - Tela entre 480 a 1500 pixels */
+@media screen and (min-width: 480px) and (max-width: 1500px) {
+  .containerTwitterCartao {
+    margin: 50px 30px;
+    gap: 20px;
+    margin-top: 125px;
+  }
+}
+
+/* Responsividade - Tela entre 699 pixels */
+@media screen and (max-width: 699px) {
+  .containerTwitterCartao {
+    gap: 20px;
+    grid-template-columns: repeat(2, 50%);
+    margin: 50px 30px;
+  }
+}
+
+/* Responsividade - Tela 1400 pixels */
+@media (max-width: 1400px) {
+  .campoBusca,
+  .campoBuscaInput {
+    width: 80%;
+  }
+}
+
+/* Responsividade - Tela 1000 pixels */
+@media screen and (max-width: 1000px) {
+  .TextoResultado {
+    font-size: 1.8em;
+  }
+}
+
+/* Responsividade - Tela 914 pixels */
+@media (max-width: 914px) {
+  section.container {
+    margin-top: 94px;
+  }
+
+  .campoBusca,
+  .campoBuscaInput {
+    height: 80px;
+  }
+
+  .campoBuscaInput {
+    font-size: 2.3em;
+  }
+}
+
+/* Responsividade - Tela entre 663 a 914 pixels */
+@media screen and (min-width: 663px) and (max-width: 914px) {
+  .TextoResultado {
+    margin: 92px 0px;
+    font-size: 1.4em;
+  }
+}
+
+/* Responsividade - Tela entre 415 a 732 pixels */
+@media screen and (min-width: 350px) and (max-width: 479px) {
+  .containerTwitterCartao {
+    display: flex;
+    margin: 0px 30px;
+  }
+}
+
+/* Responsividade - Tela entre 415 a 732 pixels */
+@media screen and (min-width: 415px) and (max-width: 732px) {
+  section.container {
+    margin-top: 72px;
+  }
+
+  .campoBusca,
+  .campoBuscaInput {
+    height: 59px;
+  }
+
+  .campoBuscaInput {
+    font-size: 1.6em;
+    padding-left: 22px;
+  }
+
+  .campoBuscaIcone {
+    width: 47px;
+    padding-left: 30px;
+  }
+
+  .TextoResultado {
+    margin: 92px 0px;
+    font-size: 1.4em;
+  }
+}
+
+/* Responsividade - Tela 414 pixels */
+@media (max-width: 414px) {
+  section.container {
+    margin-top: 72px;
+    margin-bottom: 123px;
+  }
+
+  .campoBusca {
+    width: 80%;
+    height: 51px;
+  }
+
+  .campoBusca,
+  .campoBuscaInput {
+    height: 51px;
+  }
+
+  .campoBuscaIcone {
+    width: 10%;
+    padding-left: 21.3px;
+  }
+
+  .campoBuscaInput {
+    width: 81%;
+    font-size: 1.06em;
+    padding-left: 14px;
+  }
+
+  .TextoResultado {
+    font-size: 1.37em;
+    margin-top: 181px;
+    margin-bottom: 32px;
+  }
+
+  .textoErro {
+    font-weight: 400;
+    font-size: 1em;
+    text-shadow: var(--cor-sombra-texto-erro);
+  }
+
+  .modalData {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
